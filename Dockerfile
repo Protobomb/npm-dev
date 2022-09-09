@@ -13,6 +13,9 @@ RUN apt-get install -y nodejs
 # upgrade nodejs
 RUN npm install -g npm@8.19.1
 
+# install yarn
+RUN npm install -g yarn
+
 # clean apt cache
 RUN apt-get clean autoclean
 RUN apt-get autoremove -y
