@@ -3,7 +3,8 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get upgrade -y
 
 RUN apt-get install -y \
-    curl
+    curl \
+    unzip
 
 # install nodejs
 RUN curl -fsSL https://deb.nodesource.com/setup_current.x | bash -
